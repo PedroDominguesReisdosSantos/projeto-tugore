@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Bank Gothic Lighter';
+    src: url(fontes/bankgothic-md-bt/Bank\ Gothic\ Light\ Regular.otf) format(opentype);
+}
+
+@font-face {
+    font-family: 'Bank Gothic bold';
+    src: url(fontes/bankgothic-md-bt/BankGothic\ Bold.ttf) format(truetype);
+}
+
+:root {
+    --fonte1: 'Bank Gothic Lighter';
+    --fonte2: 'Bank Gothic Bold'
+
+}
+
+header {
+    text-align: center;
+}
+
+header > h1 {
+    font-family: var(--fonte2);
+}
+
+header > h2 {
+    font-family: var(--fonte1);
+}
+
+header > img {
+    width: 150px;
+}
