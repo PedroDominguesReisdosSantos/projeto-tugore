@@ -13,6 +13,12 @@
 :root {
     --fonte1: 'Bank Gothic Lighter';
     --fonte2: 'Bank Gothic Bold';
+
+    --cor1: #595959;
+    --cor2: #0D0D0D;
+    --cor3: #F2F2F2;
+    --cor4: #EDAE4C;
+    --cor5: #F93046;
 }
 
 * {
@@ -37,20 +43,39 @@ header > img {
 }
 
 nav {
+    margin: 10px;
+    background-color: var(--cor1); 
     padding: 20px;
     font-family: var(--fonte2);
-    text-align: right;
+    text-align: center;
     font-size: 2vw;
 }
 
+nav a {
+    color: var(--cor2);
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
 section {
-    text-align: center;
+    height: 400px;
+    text-align: center;   
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--fonte1);
     font-size: 3vw;
+    background-color: #595959;
+    margin: 10px;
+}
+
+section p:hover {
+    text-decoration: underline;
 }
 
 footer {
